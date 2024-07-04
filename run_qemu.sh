@@ -20,5 +20,6 @@ sudo $QEMU \
 	-dtb $DTB \
 	-kernel $KERNEL \
 	-nographic \
+	--trace 'memory_region_ops_*'
 	
 # -monitor telnet:localhost:4322,server,nowait 
